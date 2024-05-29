@@ -7,10 +7,11 @@
 #hero h1,
 h2 {
   font-family: 'Jovelyn', sans-serif;
-  font-size: 8em;
+  font-size: 7em;
   margin: 0 auto;
   text-align: center;
   color: var(--white);
+  letter-spacing: 0.1em;
 }
 
 #hero h2 {
@@ -19,16 +20,17 @@ h2 {
   text-transform: uppercase;
   font-style: thin;
   font-size: 3em;
+  letter-spacing: 0.3em;
   margin-top: 0;
 }
 
 .hero-image {
-    background-image: url('../assets/images/bg.jpg');
-background-size: cover;  
-background-repeat: none;  
-height: 700px;
-    width: 80%; 
-    margin: var(--margin);
+  background-image: url('../assets/images/hero.jpg');
+  background-size: cover;
+  background-repeat: none;
+  height: 700px;
+  width: 80%;
+  margin: var(--margin);
 }
 @media (max-width: 668px) {
   #hero h1 {
