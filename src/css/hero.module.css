@@ -4,26 +4,26 @@
   width: 100%;
 }
 
-
-#hero h1, h2 {
+#hero h1,
+h2 {
   font-family: 'Jovelyn', sans-serif;
   font-size: 8em;
-  margin: 4em auto;
+  margin: 7em auto 0px 0px;
   text-align: center;
   color: var(--white);
 }
 
 #hero h2 {
-    font-size: 5em;
+  font-size: 5em;
 }
 
 @media (max-width: 668px) {
-    #hero h1 {
-        font-size: 4em;
-    }
+  #hero h1 {
+    font-size: 4em;
+  }
 
-    #hero h2 {
-        margin-top: 0;
-        font-size: 2em;
-    }
+  #hero h2 {
+    margin-top: 0;
+    font-size: 2em;
+  }
 }

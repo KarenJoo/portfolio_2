@@ -2,12 +2,19 @@
   color: #fff;
   padding: 15px 0;
 }
+.nav-content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: var(--margin);
+  padding: 0px 10px;
+}
 
 .logo {
   font-family: 'poppins', sans-serif;
   font-size: 15px;
-  font-weight: 100;
-  color: var(--primary);
+  font-weight: 400;
+  color: var(--white);
   text-decoration: none;
 }
 
@@ -29,16 +36,34 @@
 
 /* Media query for smaller screens */
 @media (max-width: 668px) {
+  #navbar {
+    background-color: var(--container);
+    position: fixed;
+    width: 100%;
+  }
+
+  .menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--primary);
+    margin: 5px;
+  }
+
+  .logo {
+    color: var(--primary);
+  }
   .menu {
     display: none;
     flex-direction: column;
     align-items: center;
-    background-color: var(--white);
+    color: var(--primary);
     width: 100%;
     position: absolute;
-    top: 60px;
+    top: 79px;
     left: 0;
     height: 200px;
+    background-color: var(--container);
+   
   }
 
   .menu li {
