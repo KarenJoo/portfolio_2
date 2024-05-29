@@ -1,0 +1,30 @@
+@import url('./nav.module.css');
+@import url('./footer.module.css');
+
+:root {
+  --primary: #333;
+  --width: 100%;
+  --shadow: box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer {
+  margin: 0;
+  background-color: #333;
+  color: #fff;
+  padding: 15px 0;
+}
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+}
