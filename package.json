@@ -2,20 +2,18 @@
   "name": "portfolio2",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
-  "lint:fix": "eslint --fix .",
-  "format": "prettier --write .",
-  "start": "live-server",
-  "build": "echo 'Add your build script here'"
+    "lint:fix": "eslint --fix .",
+    "format": "prettier --write .",
+    "start": "live-server"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/KarenJoo/portfolio_2.git"
   },
-  
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -43,5 +41,4 @@
       "prettier --write"
     ]
   }
-  
 }
