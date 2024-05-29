@@ -1,21 +1,32 @@
 @import url('./nav.module.css');
-@import url('./footer.module.css');
+@import url('./hero.module.css');
 
 :root {
-  --primary: #333;
+  --primary: #2F343F;
+  --secondary: #525864;
+  --white: #fff;
   --width: 100%;
   --height: 100%;
   --shadow: box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   --margin: 10px auto;
   --text-align: center;
 }
+@font-face {
+  font-family: 'Jovelyn';
+  src: url('../assets/fonts/Jovelyn.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 body,
 html {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+  font-style: thin;
   margin: 0;
   padding: 0;
   height: 100%;
+  background-color: var(--primary);
 }
 
 main {
@@ -32,6 +43,7 @@ main {
   padding: 0px 10px;
 }
 
+
 section {
   flex: 1;
   display: flex;
@@ -43,16 +55,20 @@ section {
 .container {
   width: var(--width);
   height: 100%;
-  background-color: antiquewhite;
+}
+
+.container h2 {
+    font-size: 2em;
 }
 
 footer {
   margin: var(--margin);
-  background-color: #333;
+  background-color: var(--primary);
   color: #fff;
   padding: 15px 0;
   text-align: var(--text-align);
+  position: relative;
 }
 /* Media query for smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 668px) {
 }
