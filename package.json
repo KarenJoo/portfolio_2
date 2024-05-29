@@ -1,0 +1,47 @@
+{
+  "name": "portfolio2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+  "lint:fix": "eslint --fix .",
+  "format": "prettier --write .",
+  "start": "live-server",
+  "build": "echo 'Add your build script here'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KarenJoo/portfolio_2.git"
+  },
+  
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KarenJoo/portfolio_2/issues"
+  },
+  "homepage": "https://github.com/KarenJoo/portfolio_2#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.3.0",
+    "eslint": "^9.3.0",
+    "globals": "^15.3.0",
+    "lint-staged": "^15.2.5",
+    "live-server": "^1.2.2",
+    "prettier": "^3.2.5"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.html": [
+      "prettier --write"
+    ],
+    "*.css": [
+      "prettier --write"
+    ]
+  }
+  
+}
