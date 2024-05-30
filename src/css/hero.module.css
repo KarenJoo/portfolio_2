@@ -73,9 +73,25 @@ h3 {
   #hero h2 {
     top: 93%;
     font-size: 2.5em;
+  
   }
   .hero-img-2 {
     width: 60%;
     transform: translate(55%, -50%);
   }
+}
+
+@media (max-width: 412px){
+
+    #hero h1 {
+        transform: translateX(-12%);
+  
+    }
+    #hero h2 {
+        font-size: 2.0em;
+    }
+
+    .hero-img-2 {
+        background-position: right 10%;
+    }
 }
