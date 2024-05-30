@@ -55,7 +55,7 @@ h3 {
 .hero-img-2 {
   background-image: url('../assets/images/image2.jpg');
   height: 300px;
-max-width: 500px;
+  max-width: 500px;
   background-size: contain;
   width: 500px;
   transform: translate(40%, -50%);
@@ -68,17 +68,21 @@ max-width: 500px;
 
 @media (max-width: 668px) {
   #hero h1 {
-    margin-top: 5em;
-    font-size: 4em;
+    font-size: 3em;
+    transform: translateX(-17%);
+    top: -15%;
   }
 
-  .hero-image {
+  .hero-img-1 {
     width: 80%;
-    height: 400px;
+    height: 300px;
   }
-
   #hero h2 {
-    margin-top: 0;
-    font-size: 2em;
+    top: 93%;
+    font-size: 2.5em;
+  }
+  .hero-img-2 {
+    width: 60%;
+    transform: translate(55%, -50%);
   }
 }

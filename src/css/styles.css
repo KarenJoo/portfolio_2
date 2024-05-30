@@ -1,5 +1,6 @@
 @import url('./nav.module.css');
 @import url('./hero.module.css');
+@import url('./sections.module.css');
 
 :root {
   --primary: #2f343f;
@@ -41,22 +42,13 @@ main {
 }
 
 section {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 10px;
-}
-
-.container {
-  width: var(--width);
-  height: var(--height);
-}
-
-.container h2 {
-  font-size: 2em;
-}
-
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+  }
+  
 footer {
   margin: var(--margin);
   background-color: var(--primary);
