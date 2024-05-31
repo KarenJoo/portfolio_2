@@ -8,14 +8,15 @@
   --secondary: #CECDC5;
   --white: #fff;
   --dark: #16181dd2;
-  --navbar: #2f343fd3;
-  --container: #ffffffc0;
+  --navbar: #e4e1dc58;
+  --container: #ffffff;
   --width: 100%;
   --height: 100%;
-  --shadow: box-shadow: 0 10px 20px rgba(0.5, 0.1, 0.2, 0.1);
+  --shadow: 0 10px 20px rgba(0.5, 0.1, 0.2, 0.1);
   --margin: 10px auto;
   --text-align: center;
   --min-width: 320px;
+  --text-shadow: 0 0 0.1px rgba(0, 0, 0, 0.01);
 }
 @font-face {
   font-family: 'Jovelyn';

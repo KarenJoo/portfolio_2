@@ -1,5 +1,5 @@
 #navbar {
-  color: var(--primary);
+  background-color: var(--navbar);
   padding: 15px 0;
   min-width: var(--min-width);
   height: 40px;
@@ -13,7 +13,6 @@
   align-items: center;
   margin: 0px auto;
   padding: 0px 10px;
-
 }
 
 .logo {
@@ -22,6 +21,7 @@
   letter-spacing: 0.1em;
   color: var(--white);
   text-decoration: none;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .logo-full,
