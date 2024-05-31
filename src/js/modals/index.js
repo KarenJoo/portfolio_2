@@ -1,29 +1,29 @@
 export function initModals() {
-    // Get all the view more buttons
     const viewMoreBtns = document.querySelectorAll('.view-more-btn');
-    // Get all the modals
     const modals = document.querySelectorAll('.modal');
-    // Get all the close buttons
     const closeBtns = document.querySelectorAll('.close');
   
     viewMoreBtns.forEach((btn, index) => {
-      btn.addEventListener('click', () => {
-        modals[index].style.display = 'flex';
+        btn.addEventListener('click', () => {
+          modals[index].style.display = 'flex';
+          document.body.style.overflow = 'hidden'; 
+        });
       });
-    });
-  
-    closeBtns.forEach((btn, index) => {
-      btn.addEventListener('click', () => {
-        modals[index].style.display = 'none';
-      });
-    });
-  
-    window.addEventListener('click', (event) => {
-      modals.forEach((modal) => {
-        if (event.target == modal) {
+    
+      closeBtns.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const modal = btn.closest('.modal');
           modal.style.display = 'none';
-        }
+          document.body.style.overflow = ''; 
+        });
       });
-    });
-  }
-  
+    
+      window.addEventListener('click', (event) => {
+        modals.forEach((modal) => {
+          if (event.target == modal) {
+            modal.style.display = 'none';
+            document.body.style.overflow = ''; 
+          }
+        });
+      });
+    }

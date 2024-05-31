@@ -1,0 +1,26 @@
+.view-more-btn,
+.button {
+    border: 2px solid #fff;
+    display: block;
+    width: 100px;
+    margin: 30px auto;
+    text-align: var(--text-align);
+    text-transform: uppercase;
+    border-radius: 50px;
+    padding: 10px;
+  }
+  .view-more-btn a, 
+  .button a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 12px;
+  }
+
+.view-more-btn {
+  color: var(--primary);
+  border: 1px solid #2f343f;
+  background-color: transparent;
+  }
+
+
+  
