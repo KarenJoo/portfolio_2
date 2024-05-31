@@ -1,10 +1,9 @@
 #navbar {
-  color: #fff;
+  color: var(--primary);
   padding: 15px 0;
   min-width: var(--min-width);
   height: 40px;
   z-index: 1000;
-  background-color: var(--navbar);
   position: fixed;
   width: var(--width);
 }

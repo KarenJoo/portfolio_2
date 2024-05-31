@@ -8,6 +8,25 @@ document.addEventListener('DOMContentLoaded', () => {
   initModals();  
   
   const video = document.getElementById('mediaVideo');
-    video.playbackRate = 0.3;
+  const placeholder = document.getElementById('video-placeholder');
+
+  
+  if (video && placeholder) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          video.playbackRate = 0.5;
+          video.style.display = 'block'; // Show video
+          placeholder.style.display = 'none'; // Hide placeholder
+          video.play();
+          observer.unobserve(video);
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    observer.observe(video);
+  }
 });
 

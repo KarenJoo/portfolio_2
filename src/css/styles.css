@@ -23,7 +23,10 @@
   font-style: normal;
 }
 
-
+h2 {
+  font-family: 'Jovelyn', sans-serif;
+  color: var(--white);
+}
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -46,24 +49,40 @@ main {
 }
 
 video {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    z-index: -1;
-    top: 0;
-    position: absolute;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  top: 0;
+  position: absolute;
 }
 
-section  {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    max-width: 100%;
-    margin: 10px;
-  }
+section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  max-width: 100%;
+  margin: 10px;
+}
+
+.button {
+  border: 2px solid #fff;
+  display: block;
+  width: 100px;
+  margin: 30px auto;
+  text-align: var(--text-align);
+  text-transform: uppercase;
+  border-radius: 50px;
+  padding: 10px;
+}
+.button a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 12px;
+}
 
 footer {
   margin: var(--margin);
