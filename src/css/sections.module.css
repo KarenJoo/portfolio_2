@@ -100,7 +100,7 @@
     height: auto;
     justify-content: center;
     width: var(--width);
-    max-width: 450px;
+    max-width: 400px;
   }
   .card img {
     width: var(--width);
