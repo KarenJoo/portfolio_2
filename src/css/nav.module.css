@@ -45,7 +45,7 @@
 }
 
 .menu li a {
-  color: var(--white);
+  color: var(--primary);
   text-decoration: none;
 }
 

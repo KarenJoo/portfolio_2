@@ -52,11 +52,12 @@
   height: 250px;
   max-width: 600px;
   margin: 10em auto;
-  width: 95%;
+  width: 100%;
   justify-content: center;
   align-items: center;
   position: relative;
   object-position: bottom 50%;
+  box-shadow: var(--img-shadow);
 }
 
 .hero-img-2 {
@@ -70,6 +71,7 @@
   position: absolute;
   background-size: cover;
   background-repeat: no-repeat;
+  box-shadow: var(--img-shadow);
 }
 
 @media (max-width: 668px) {
@@ -81,7 +83,7 @@
   }
 
   .hero-img-1 {
-    width: 80%;
+    width: 85%;
     height: 300px;
   }
   #hero h2 {
