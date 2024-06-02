@@ -5,7 +5,7 @@
 
 :root {
   --primary: #2f343f;
-  --secondary: #CECDC5;
+  --secondary: #cecdc5;
   --white: #fff;
   --dark: #16181dd2;
   --navbar: #e4e1dcda;
@@ -37,7 +37,7 @@ body {
   font-weight: 200;
   font-style: normal;
   margin: 0;
-  padding: 0;
+  display: grid;
   height: var(--height);
   background-color: var(--secondary);
   min-width: var(--min-width);
@@ -71,8 +71,6 @@ section {
   max-width: 100%;
   margin: 10px;
 }
-
-
 
 footer {
   margin: var(--margin);
