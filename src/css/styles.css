@@ -30,6 +30,9 @@
 h2 {
   font-family: 'Jovelyn', sans-serif;
   color: var(--white);
+  text-align: center;
+  font-size: 3em;
+  text-shadow: var(--text-shadow);
 }
 
 body {
@@ -76,9 +79,11 @@ footer {
   margin: var(--margin);
   background-color: var(--primary);
   color: #fff;
-  padding: 15px 0;
+  padding: 0;
   text-align: var(--text-align);
   position: relative;
+  width: 100%;
+  margin: 0;
 }
 /* Media query for smaller screens */
 @media (max-width: 668px) {

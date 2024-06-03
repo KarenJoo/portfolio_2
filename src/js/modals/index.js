@@ -1,25 +1,25 @@
 export function initModals() {
   const viewMoreBtns = document.querySelectorAll('.view-more-btn')
-  const modals = document.querySelectorAll('.modal')
-  const closeBtns = document.querySelectorAll('.close')
-  const overlays = document.querySelectorAll('.overlay')
 
   viewMoreBtns.forEach((btn, index) => {
     btn.addEventListener('click', () => {
-      modals[index].style.display = 'flex'
-      overlays[index].style.display = 'block'
+      const modal = document.getElementById(`modal-${index + 1}`)
+      const overlay = document.getElementById(`overlay-${index + 1}`)
+
+      modal.style.display = 'flex'
+      overlay.style.display = 'block'
       document.body.classList.add('open')
-      const modalImages = modals[index].querySelectorAll('img');
-      modalImages.forEach(img => {
-        img.style.display = 'block';
-      });
     })
   })
+
+  const closeBtns = document.querySelectorAll('.close')
+  const overlays = document.querySelectorAll('.overlay')
 
   closeBtns.forEach((btn) => {
     btn.addEventListener('click', () => {
       const modal = btn.closest('.modal')
       const overlay = modal.previousElementSibling
+
       modal.style.display = 'none'
       overlay.style.display = 'none'
       document.body.classList.remove('open')
@@ -28,7 +28,9 @@ export function initModals() {
 
   overlays.forEach((overlay, index) => {
     overlay.addEventListener('click', () => {
-      modals[index].style.display = 'none'
+      const modal = document.getElementById(`modal-${index + 1}`)
+
+      modal.style.display = 'none'
       overlay.style.display = 'none'
       document.body.classList.remove('open')
     })
