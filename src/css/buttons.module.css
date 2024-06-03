@@ -1,28 +1,35 @@
 .view-more-btn,
+.hero-button,
 .button {
-    border: 2px solid #fff;
-    display: block;
-    width: 100px;
-    margin: 30px auto;
-    text-align: var(--text-align);
-    text-transform: uppercase;
-    border-radius: 10px;
-    padding: 10px 0px;
-    box-shadow: var(--box-shadow);
-  
-  }
-  .view-more-btn a, 
-  .button a {
-    text-decoration: none;
-    color: var(--white);
-    font-size: 12px;
-  }
+  border: 2px solid #fff;
+  display: block;
+  width: 100px;
+  margin: 30px auto;
+  text-align: var(--text-align);
+  text-transform: uppercase;
+  border-radius: 10px;
+  padding: 10px 0px;
+  box-shadow: var(--box-shadow);
+}
+.view-more-btn a,
+.hero-button a,
+.button a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 12px;
+}
 
 .view-more-btn {
   color: var(--primary);
   border: 1px solid #2f343f;
   background-color: transparent;
-  }
+}
 
-
-  
+.hero-button {
+ 
+  background-color: #ffffffaf;
+  border: 1px #ffffff solid;
+}
+.hero-button a {
+  color: var(--primary);
+}
