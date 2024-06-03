@@ -9,6 +9,10 @@ export function initModals() {
       modals[index].style.display = 'flex'
       overlays[index].style.display = 'block'
       document.body.classList.add('open')
+      const modalImages = modals[index].querySelectorAll('img');
+      modalImages.forEach(img => {
+        img.style.display = 'block';
+      });
     })
   })
 
