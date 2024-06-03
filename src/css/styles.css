@@ -35,6 +35,19 @@ h2 {
   text-shadow: var(--text-shadow);
 }
 
+h5 {
+  margin: 0px;
+  
+}
+
+p {
+ margin-top: 10px;
+  margin-bottom: 30px; 
+  font-size: 12px;
+}
+
+
+
 body {
   font-family: 'Poppins', sans-serif;
   font-weight: 200;

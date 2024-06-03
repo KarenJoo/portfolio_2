@@ -34,13 +34,14 @@
 .card-text {
   display: flex;
   flex-direction: column;
+  padding: 10px;
 }
 
 .card-link {
   text-decoration: none;
   color: var(--dark);
   justify-content: flex-end;
-  margin: 10px 20px;
+  margin: 20px 20px;
 }
 
 .body.open > .modal,
