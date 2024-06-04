@@ -3,6 +3,12 @@
   flex-wrap: wrap;
   justify-content: center;
   height: auto;
+  width: 90%;
+  max-width: 90%;
+  max-height: calc(100vh - 300px); 
+  overflow-y: auto;
+  margin: 0 auto;
+  border: 1px solid #fff;
 }
 
 
@@ -14,7 +20,7 @@
   background-color: var(--container);
   box-shadow: var(--shadow);
   max-width: 800px;
-  width: 95%;
+  width: 90%;
   margin-bottom: 10px;
 }
 
@@ -117,11 +123,16 @@ body.open {
 
 
 @media (max-width: 668px) {
+  .projects-grid {
+    height: 600px;
+    background-color: aqua;
+  }
+
   .card {
     flex-direction: column;
     height: auto;
     justify-content: center;
-    width: var(--width);
+    width: 90%;
     max-width: 400px;
   }
   .card img {

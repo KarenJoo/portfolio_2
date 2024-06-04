@@ -3,7 +3,7 @@
   height: auto; 
   width: var(--width);
   max-width: var(--width);
-  margin: 10em auto;
+  margin: 6em auto;
   justify-content: center;
   text-align: center;
   display: flex;
