@@ -1,5 +1,6 @@
 #hero {
   min-height: 100vh;
+  height: auto; 
   width: var(--width);
   max-width: var(--width);
   margin: 10em auto;

@@ -1,11 +1,9 @@
-.container {
-  width: var(--width);
-  margin: 0 auto;
-  align-items: center;
-  height: 100vh;
-  max-height: calc(100vh - 100px);
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: auto;
 }
-
 
 
 .card {
