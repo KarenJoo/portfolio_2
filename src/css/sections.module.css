@@ -87,6 +87,7 @@ body.open {
   flex-direction: column;
   z-index: 1000;
   width: 90%;
+  max-width: 800px;
   box-shadow: var(--shadow);
   overflow-y: auto;
   border: 1px solid #fefefe;  
