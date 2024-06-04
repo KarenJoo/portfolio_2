@@ -15,8 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             video.playbackRate = 0.5
-            video.style.display = 'block' // Show video
-            placeholder.style.display = 'none' // Hide placeholder
+            video.style.display = 'block' 
+            placeholder.style.display = 'none' 
             video.play()
             observer.unobserve(video)
           }

@@ -1,7 +1,7 @@
 #hero {
   min-height: 100vh;
-  width: 100%;
-  max-width: 100%;
+  width: var(--width);
+  max-width: var(--width);
   margin: 10em auto;
   justify-content: center;
   text-align: center;
@@ -10,7 +10,7 @@
 }
 
 #mediaVideo {
-  max-width: 100%;
+  max-width: var(--width);
   width: 100vw;
   position: absolute;
   top: 0;
@@ -18,7 +18,7 @@
   z-index: -1;
 }
 #video-placeholder {
-  width: 100%;
+  width: var(--width);
   height: 100vh;
   object-fit: cover;
   position: absolute;
@@ -30,7 +30,7 @@
 .hero-text {
   width: 90vw;
   max-width: 600px;
-  margin: 0 auto;
+  margin: var(--margin);
   padding: 0;
 }
 #hero h2,

@@ -1,9 +1,7 @@
-
 #about .container {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-
+  margin: var(--margin);
+  display: flex;
+  flex-direction: row;
 }
 .about-img {
   height: 400px;
@@ -15,15 +13,12 @@
   border: 2px #fff solid;
 }
 
-
-
 @media (max-width: 668px) {
-
-    #about .container {
-        flex-direction: column;
-    }
-    .about-img {
-        width: 300px;
-        height: 300px;
-    }
+  #about .container {
+    flex-direction: column;
+  }
+  .about-img {
+    width: 300px;
+    height: 300px;
+  }
 }
