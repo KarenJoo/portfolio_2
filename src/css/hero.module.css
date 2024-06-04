@@ -17,7 +17,7 @@
   left: 0;
   z-index: -1;
 }
-#hero h1,
+
 #hero h2 {
   font-family: 'Jovelyn', sans-serif;
   font-size: 7em;
@@ -30,47 +30,33 @@
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
+.hero-textbox {
+  background-color: #fff;
+  height: 200px;
+  width: 600px;
+}
+
 #hero h1 {
-  font-size: 6em;
-  bottom: 85%;
-  transform: translateX(-15%);
-  width: var(--width);
+  display: inline-flex;
+  font-family: "Impact", sans-serif;
+  background: url("https://picsum.photos/1920/1080");
+  font-size: 8rem;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #5b728a54;
+  animation: move 30s linear infinite;
+  letter-spacing: .3rem;
+}
+@keyframes move {
+  from { background-position: 0 80%; }
+  to { background-position: 100% 50%; }
 }
 
 #hero h2 {
   font-size: 4.5em;
-  top: 85%;
+
   transform: translateX(45%);
   max-width: 50%;
-}
-
-.hero-img-1 {
-  background-image: url('../assets/images/hero1.png');
-  background-size: cover;
-  background-repeat: none;
-  height: 250px;
-  max-width: 600px;
-  margin: 10em auto;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  object-position: bottom 50%;
-  box-shadow: var(--img-shadow);
-}
-
-.hero-img-2 {
-  background-image: url('../assets/images/hero2.png');
-  height: 300px;
-  max-width: 500px;
-  background-size: contain;
-  width: 450px;
-  transform: translate(40%, -50%);
-  margin: 0 auto;
-  position: absolute;
-  background-size: cover;
-  background-repeat: no-repeat;
-  box-shadow: var(--img-shadow);
 }
 
 @media (max-width: 668px) {
@@ -78,21 +64,10 @@
     font-size: 4em;
     transform: translateX(-10%);
     letter-spacing: none;
-    top: -15%;
   }
 
-  .hero-img-1 {
-    width: 85%;
-    height: 300px;
-  }
   #hero h2 {
-    top: 93%;
     font-size: 2.5em;
-  }
-  .hero-img-2 {
-    width: 60%;
-    transform: translate(55%, -50%);
-    background-position: right 10%;
   }
 }
 
@@ -104,9 +79,5 @@
   }
   #hero h2 {
     font-size: 2em;
-  }
-
-  .hero-img-2 {
-    background-position: right 10%;
   }
 }
