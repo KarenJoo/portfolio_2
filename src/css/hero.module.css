@@ -2,11 +2,16 @@
   min-height: 100vh;
   width: 100%;
   margin: 10em auto;
+ 
 }
 
 #mediaVideo {
   max-width: 100%;
   width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 #video-placeholder {
   width: 100%;
@@ -18,31 +23,18 @@
   z-index: -1;
 }
 
-#hero h2 {
-  font-family: "Poppins", sans-serif;
-  
-  margin: 0 auto;
-  text-align: center;
-  color: var(--white);
-  text-shadow: var(--shadow);
-  letter-spacing: 0.1em;
-  position: absolute;
-  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
-   font-size: 4.5em;
-  transform: translateX(45%);
-  max-width: 50%;
-}
 
 .hero-textbox {
-  background-color: #cecdc5c5;
+  background-color: #cecdc5ac;
   height: 200px;
   width: 600px;
 }
 
+#hero h2,
 #hero h1 {
   display: inline-flex;
-  font-family: "Poppins", sans-serif;
-  background: url("https://picsum.photos/1920/1080");
+  font-family: 'Poppins', sans-serif;
+  background: url('https://picsum.photos/1920/1080');
   font-size: 7rem;
   background-clip: text;
   -webkit-background-clip: text;
@@ -51,13 +43,22 @@
   margin-left: 10px;
   z-index: 1000;
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-
 }
 @keyframes move {
-  from { background-position: 0 80%; }
-  to { background-position: 100% 50%; }
+  from {
+    background-position: 0 80%;
+  }
+  to {
+    background-position: 100% 50%;
+  }
 }
 
+
+#hero h2 {
+
+  font-size: 4.5em;
+  transform: translateX(45%);
+}
 
 @media (max-width: 668px) {
   #hero h1 {
