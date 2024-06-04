@@ -1,6 +1,7 @@
 #hero {
   min-height: 100vh;
   width: 100%;
+  max-width: 100%;
   margin: 10em auto;
   justify-content: center;
   text-align: center;
@@ -26,19 +27,25 @@
   z-index: -1;
 }
 
+.hero-text {
+  width: 90vw;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0;
+}
 #hero h2,
 #hero h1 {
   display: inline-flex;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Impact', sans-serif;
   background: url('https://picsum.photos/id/73/1920/1080');
-  font-size: 7rem;
+  font-size: 9rem;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: #5b728a54;
   animation: move 30s linear infinite;
   z-index: 1000;
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
 }
 @keyframes move {
   from {
@@ -53,21 +60,11 @@
   font-size: 4.5em;
 }
 
-@media (max-width: 668px) {
-  #hero h1 {
-    font-size: 5em;
-  }
-
-  #hero h2 {
-    font-size: 2.5em;
-  }
-}
-
 @media (max-width: 412px) {
   #hero h1 {
-    font-size: 3em;
+    font-size: 5.5em;
   }
   #hero h2 {
-    font-size: 2em;
+    font-size: 3em;
   }
 }

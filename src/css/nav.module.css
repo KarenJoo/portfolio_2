@@ -18,10 +18,8 @@
 .logo {
   font-family: 'Jovelyn', sans-serif;
   font-size: 25px;
-  letter-spacing: 0.1em;
   color: var(--white);
   text-decoration: none;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
 }
 
 .logo-full,
@@ -43,7 +41,6 @@
   display: inline-block;
   margin-left: 20px;
   font-weight: 400;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
 }
 
 .menu li a {
@@ -58,7 +55,6 @@
     position: fixed;
     width: 100%;
     min-width: 320px;
-    box-shadow: var(--shadow);
   }
 
   .menu-icon .bar {
@@ -114,6 +110,5 @@
     height: 3px;
     background-color: var(--white);
     margin: 5px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
   }
 }
