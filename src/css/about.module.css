@@ -1,9 +1,14 @@
+#about {
+  height: auto;
+}
 .about-container {
   margin: var(--margin);
   display: flex;
   flex-direction: column;
   height: auto;
   margin-bottom: 20px;
+  height: 100vh;
+  max-height: calc(100vh - 100px);
 }
 .about-img {
   height: 400px;
