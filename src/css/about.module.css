@@ -1,5 +1,6 @@
 #about {
-  height: auto;
+  height: 100vh;
+  margin-bottom: 100px;
 }
 .about-container {
   margin: var(--margin);
