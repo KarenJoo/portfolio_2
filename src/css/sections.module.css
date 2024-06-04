@@ -1,36 +1,32 @@
 .projects-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  height: auto;
-  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   max-width: 90%;
-  max-height: calc(100vh - 300px); 
   overflow-y: auto;
   margin: 0 auto;
-  border: 1px solid #fff;
 }
-
 
 .card {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   border: 1px #fff solid;
   margin: 10px auto;
   background-color: var(--container);
   box-shadow: var(--shadow);
   max-width: 800px;
+  height: auto;
   width: 90%;
   margin-bottom: 10px;
 }
 
 .card img {
   width: var(--width);
-  max-width: 400px;
+  max-width: 100%;
   height: auto;
   display: block;
   top: 0;
   position: relative;
+  object-fit: cover;
 }
 
 .card-text {
@@ -70,8 +66,6 @@ body.open {
   overflow: hidden;
 }
 
-
-
 .overlay {
   display: none;
   position: fixed;
@@ -92,7 +86,7 @@ body.open {
   max-width: 800px;
   box-shadow: var(--shadow);
   overflow-y: auto;
-  border: 1px solid #fefefe;  
+  border: 1px solid #fefefe;
   margin: 10px auto;
   top: 10%;
   height: 80%;
@@ -120,14 +114,7 @@ body.open {
   cursor: pointer;
 }
 
-
-
 @media (max-width: 668px) {
-  .projects-grid {
-    height: 600px;
-    background-color: aqua;
-  }
-
   .card {
     flex-direction: column;
     height: auto;
@@ -152,14 +139,12 @@ body.open {
     transform: translate(-50%, -0%);
     box-shadow: var(--shadow);
     overflow-y: auto;
-    border: 1px solid #fefefe;  
+    border: 1px solid #fefefe;
     margin: 10px auto;
     top: 10%;
     height: 80%;
   }
 
-  
-  
   .close {
     color: #fff;
     position: absolute;
@@ -175,12 +160,10 @@ body.open {
     text-decoration: none;
     cursor: pointer;
   }
-  
+
   .modal img {
     width: var(--width);
     height: auto;
     margin: 30px 0;
   }
-  
-
 }
