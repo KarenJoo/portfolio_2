@@ -42,6 +42,10 @@
 }
 
 @media (max-width: 412px) {
+
+    #contact h2 {
+        margin: 0px;
+    }
    #contact .container {
     height: auto;
     min-height: 100vh;
