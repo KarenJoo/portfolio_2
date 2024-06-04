@@ -6,9 +6,7 @@
   max-height: calc(100vh - 100px);
 }
 
-#projects {
-  height: auto;
-}
+
 
 .card {
   display: flex;
