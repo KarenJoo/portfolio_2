@@ -28,13 +28,7 @@
   font-style: normal;
 }
 
-h2 {
-  font-family: 'Jovelyn', sans-serif;
-  color: var(--white);
-  text-align: center;
-  font-size: 3em;
-  text-shadow: var(--text-shadow);
-}
+
 
 h5 {
   margin: 0px;

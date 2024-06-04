@@ -2,7 +2,10 @@
   min-height: 100vh;
   width: 100%;
   margin: 10em auto;
- 
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 #mediaVideo {
@@ -23,26 +26,19 @@
   z-index: -1;
 }
 
-
-.hero-textbox {
-  background-color: #cecdc5ac;
-  height: 200px;
-  width: 600px;
-}
-
 #hero h2,
 #hero h1 {
   display: inline-flex;
   font-family: 'Poppins', sans-serif;
-  background: url('https://picsum.photos/1920/1080');
+  background: url('https://picsum.photos/id/73/1920/1080');
   font-size: 7rem;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: #5b728a54;
   animation: move 30s linear infinite;
-  margin-left: 10px;
   z-index: 1000;
-  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 0;
+  margin: 0 auto;
 }
 @keyframes move {
   from {
@@ -53,18 +49,13 @@
   }
 }
 
-
 #hero h2 {
-
   font-size: 4.5em;
-  transform: translateX(45%);
 }
 
 @media (max-width: 668px) {
   #hero h1 {
-    font-size: 4em;
-    transform: translateX(-10%);
-    letter-spacing: none;
+    font-size: 5em;
   }
 
   #hero h2 {
@@ -75,8 +66,6 @@
 @media (max-width: 412px) {
   #hero h1 {
     font-size: 3em;
-    transform: translateX(-12%);
-    letter-spacing: none;
   }
   #hero h2 {
     font-size: 2em;
