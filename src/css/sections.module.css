@@ -1,16 +1,20 @@
+#projects {
+  overflow: hidden; 
+  width: var(--width);
+  height: auto;
+}
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   max-width: 1000px;
-  width: 100%;
-  overflow-y: auto;
+  width: var(--width);
   margin: 0 auto;
+  height: auto;
   align-items: center;
   justify-content: center;
   text-shadow: var(--shadow);
-  padding: 10px;
-  scrollbar-width: thin;
-  scrollbar-color: #2f343f #f1f1f1;
+  overflow-x: hidden;
+
 }
 
 .card {
@@ -122,6 +126,12 @@ body.open {
 }
 
 @media (max-width: 668px) {
+
+  .projects-grid {
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #2f343f #f1f1f1;
+  }
   .card {
     flex-direction: column;
     height: auto;

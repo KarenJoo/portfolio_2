@@ -46,10 +46,8 @@ p {
   text-align: center;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
   margin-bottom: 10px;
-  margin-top: 50px;
+  margin-top: 100px;
 }
-
-
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -60,6 +58,8 @@ body {
   height: var(--height);
   background-color: var(--secondary);
   min-width: var(--min-width);
+  width: var(--width);
+  overflow-x: hidden;
 }
 
 html {
@@ -69,6 +69,8 @@ html {
 main {
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
+  width: var(--width);
 }
 
 video {
@@ -78,8 +80,8 @@ video {
   z-index: -1;
   top: 0;
   position: absolute;
+  overflow-x: hidden;
 }
-
 
 section {
   flex: 1;
@@ -89,9 +91,10 @@ section {
   justify-content: center;
   height: auto;
   min-height: 100vh;
-  max-width: 100%;
+  max-width: var(--width);
   margin: 10px;
-  overflow: hidden; 
+  overflow: hidden;
+  width: var(--width);
 }
 
 .container {
@@ -100,8 +103,9 @@ section {
   align-items: center;
   min-height: 100vh;
   height: auto;
+ overflow: hidden;
+  padding-top: 0px;
 }
-
 
 footer {
   background-color: var(--navbar);
@@ -114,10 +118,8 @@ footer {
 }
 
 @media (max-width: 412px) {
-h2 {
-margin: 0px;
-font-size: 4em;
-}
-
-
+  h2 {
+    margin: 0px;
+    font-size: 4em;
+  }
 }

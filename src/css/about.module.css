@@ -1,5 +1,7 @@
 #about {
   height: 100vh;
+  overflow-y: hidden;  
+  width: var(--width);
  
 }
 .about-container {
