@@ -2,6 +2,7 @@
   overflow: hidden; 
   width: var(--width);
   height: auto;
+  width: 90%;
 }
 .projects-grid {
   display: grid;

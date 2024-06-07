@@ -59,7 +59,6 @@ body {
   background-color: var(--secondary);
   min-width: var(--min-width);
   width: var(--width);
-  overflow-x: hidden;
 }
 
 html {
@@ -69,8 +68,9 @@ html {
 main {
   display: flex;
   flex-direction: column;
-  overflow-x: hidden;
   width: var(--width);
+  height: auto;
+  overflow-x: hidden;
 }
 
 video {
@@ -81,6 +81,7 @@ video {
   top: 0;
   position: absolute;
   overflow-x: hidden;
+  min-height: 100vh;
 }
 
 section {
@@ -89,22 +90,18 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: auto;
   min-height: 100vh;
   max-width: var(--width);
   margin: 10px;
-  overflow: hidden;
+  padding: 20px;
   width: var(--width);
 }
 
 .container {
   width: var(--width);
   margin: 0 auto;
+  z-index: 1;
   align-items: center;
-  min-height: 100vh;
-  height: auto;
- overflow: hidden;
-  padding-top: 0px;
 }
 
 footer {
@@ -119,7 +116,7 @@ footer {
 
 @media (max-width: 412px) {
   h2 {
-    margin: 0px;
+    margin-top: 0px;
     font-size: 4em;
   }
 }

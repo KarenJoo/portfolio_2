@@ -1,11 +1,12 @@
 #navbar {
   background-color: var(--navbar);
   padding: 15px 0;
-  min-width: var(--min-width);
+  min-width: 100vw;
   height: 40px;
-  z-index: 1000;
+  z-index: 1002;
   position: fixed;
   width: var(--width);
+  overflow: hidden;
 }
 .nav-content-container {
   display: flex;
@@ -13,6 +14,8 @@
   align-items: center;
   margin: var(--margin);
   padding: 0px 10px;
+  margin-right: 20px;
+
 }
 
 .logo {
@@ -20,6 +23,7 @@
   font-size: 25px;
   color: var(--white);
   text-decoration: none;
+  padding-left: 10px;
 }
 
 .logo-full,
@@ -34,7 +38,8 @@
 .menu {
   list-style: none;
   margin: 0;
-  padding: 0;
+  z-index: 1002;
+
 }
 
 .menu li {
