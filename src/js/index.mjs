@@ -1,10 +1,12 @@
 import { initModals } from './modals/index.js'
 import { burgerMenu } from './nav/navbar.mjs'
+import { moveSlide } from './slider/index.mjs'
 
 document.addEventListener('DOMContentLoaded', () => {
   const menuIcon = document.querySelector('.menu-icon')
   menuIcon.addEventListener('click', burgerMenu)
   initModals()
+  moveSlide()
 
   const video = document.getElementById('mediaVideo')
   const placeholder = document.getElementById('video-placeholder')

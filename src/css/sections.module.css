@@ -3,32 +3,55 @@
   width: var(--width);
   height: auto;
   width: 90%;
-}
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  max-width: 1000px;
-  width: var(--width);
   margin: 0 auto;
-  height: auto;
+  background-color: beige;
+}
+
+#projects .container {
+  background-color: aqua;
+} 
+.projects-slider { 
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  background-color: aqua;
+  justify-content: flex-start; 
+  margin: 0 auto;
+}
+
+.projects-grid {
+  display: flex;
+background-color: #2f343f;
+height: auto;
+align-items: center;
+justify-content: center;
+margin: 0 auto;
+width: 100%;
+overflow: hidden;
+}
+
+.card-container {
+  scroll-snap-align: start; 
+  flex: 0 0 100%; 
+  margin: 0 auto;
   align-items: center;
   justify-content: center;
-  text-shadow: var(--shadow);
-  overflow-x: hidden;
-
+width: 100%;
+  max-width: 100%;
+  height: auto; 
 }
 
 .card {
   display: flex;
   flex-direction: column;
   border: 1px #fff solid;
-  margin: 10px auto;
   background-color: var(--container);
   box-shadow: var(--shadow);
-  max-width: 800px;
-  height: 900px;
+  max-width: 400px;
+  height: 850px;
   width: 90%;
-  margin-bottom: 10px;
+  justify-content: space-between;
 }
 
 .card img {
@@ -52,6 +75,31 @@
   color: var(--dark);
   margin: 20px 10px;
   font-size: 15px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1000;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
 }
 
 .body.open > .modal,
