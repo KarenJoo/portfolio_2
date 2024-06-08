@@ -4,25 +4,19 @@
   height: auto;
   width: 90%;
   margin: 0 auto;
-  background-color: beige;
 }
 
-#projects .container {
-  background-color: aqua;
-} 
 .projects-slider { 
   display: flex;
   align-items: center;
   overflow: hidden;
   position: relative;
-  background-color: aqua;
   justify-content: flex-start; 
   margin: 0 auto;
 }
 
 .projects-grid {
   display: flex;
-background-color: #2f343f;
 height: auto;
 align-items: center;
 justify-content: center;

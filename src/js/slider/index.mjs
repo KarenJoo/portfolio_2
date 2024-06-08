@@ -1,9 +1,9 @@
 let currentSlide = 0;
 
-export function moveSlide(direction) {
+export default function moveSlide(direction) {
   const slides = document.querySelectorAll('.card-container');
   const totalSlides = slides.length;
-  
+
   // Update the current slide index
   currentSlide += direction;
 
