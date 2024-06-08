@@ -1,6 +1,6 @@
 let currentSlide = 0;
 
-function moveSlide(direction) {
+export default function moveSlide(direction) {
   const slides = document.querySelectorAll('.card-container');
   const totalSlides = slides.length;
 
@@ -16,4 +16,4 @@ function moveSlide(direction) {
   document.querySelector('.projects-grid').style.transform = `translateX(${offset}%)`;
 }
 
-export default moveSlide;
+

@@ -44,7 +44,7 @@
 }
 
 .card:hover {
-  transform: scale(1.02);
+  transform: scale(1.01);
 }
 
 .card img {
@@ -84,7 +84,7 @@
   user-select: none;
   background-color: rgba(0, 0, 0, 0.5);
   border-color: #fff;
-  z-index: 999;
+  z-index: 888;
 }
 
 .next {
@@ -93,76 +93,6 @@
 
 
 
-.body.open > .modal,
-.modal-content {
-  transition: 0.5s;
-}
-
-@keyframes modal-in {
-  0% {
-    transform: translate (-50%, 50%);
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    transform: translate(-50%, calc(10px + 10px));
-  }
-}
-/* Modal Styles */
-
-body.open .overlay {
-  display: block;
-}
-body.open {
-  overflow: hidden;
-}
-
-.overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: var(--width);
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.508);
-  backdrop-filter: blur(5px);
-  overflow-y: hidden;
-}
-.modal {
-  display: none;
-  position: fixed;
-  flex-direction: column;
-  z-index: 1000;
-  width: 90%;
-  max-width: 700px;
-  box-shadow: var(--shadow);
-  overflow-y: auto;
-  margin: 10px auto;
-  top: 10%;
-  height: 80%;
-  align-items: center;
-}
-.modal img {
-  width: var(--width);
-  height: auto;
-  margin: 30px 0;
-}
-
-.close {
-  color: #fff;
-  position: absolute;
-  top: 80px;
-  right: 20px;
-  font-size: 30px;
-  font-weight: bold;
-  z-index: 1001;
-}
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
 
 @media (max-width: 668px) {
 
@@ -172,33 +102,13 @@ body.open {
     justify-content: center;
     width: 90%;
     max-width: 400px;
+    height: 750px;
   }
   .card img {
     width: var(--width);
     height: auto;
     object-fit: cover;
+    top: 2%;
   }
 
-
-  .close {
-    color: #fff;
-    position: absolute;
-    top: 80px;
-    right: 20px;
-    font-size: 30px;
-    font-weight: bold;
-    z-index: 1001;
-  }
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  .modal img {
-    width: var(--width);
-    height: auto;
-    margin: 30px 0;
-  }
 }
