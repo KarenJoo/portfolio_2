@@ -1,6 +1,6 @@
 #hero {
   min-height: 100vh;
-  height: auto; 
+  height: auto;
   width: var(--width);
   max-width: var(--width);
   margin: 6em auto;
@@ -39,7 +39,7 @@
   display: inline-flex;
   font-family: 'Impact', sans-serif;
   background: url('https://picsum.photos/id/73/1920/1080');
-  font-size: 9rem;
+  font-size: 8rem;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: #5b728a54;
@@ -59,6 +59,12 @@
 
 #hero h2 {
   font-size: 4.5em;
+}
+
+@media (max-width: 612px) {
+  #hero h1 {
+    max-width: 5.5em;
+  }
 }
 
 @media (max-width: 412px) {

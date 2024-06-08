@@ -6,7 +6,6 @@
   z-index: 1002;
   position: fixed;
   width: var(--width);
-  overflow: hidden;
 }
 .nav-content-container {
   display: flex;
@@ -46,11 +45,18 @@
   display: inline-block;
   margin-left: 20px;
   font-weight: 400;
+  align-items: center;
 }
 
 .menu li a {
   color: var(--white);
   text-decoration: none;
+ 
+}
+
+.menu.show {
+  display: flex; 
+ 
 }
 
 /* Media query for smaller screens */
