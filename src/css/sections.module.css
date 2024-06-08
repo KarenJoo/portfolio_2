@@ -23,9 +23,9 @@
 }
 
 .card-container {
+  
   flex: 0 0 100%;
   width: 100%;
-  background-color: #2f343f;
   margin: 0 auto;
   height: 900px;
 }
@@ -41,6 +41,10 @@
   width: 100%;
   align-items: center;
   margin: var(--margin);
+}
+
+.card:hover {
+  transform: scale(1.02);
 }
 
 .card img {
@@ -79,12 +83,15 @@
   font-size: 18px;
   user-select: none;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1000;
+  border-color: #fff;
+  z-index: 999;
 }
 
 .next {
   right: 0;
 }
+
+
 
 .body.open > .modal,
 .modal-content {
@@ -130,7 +137,6 @@ body.open {
   max-width: 700px;
   box-shadow: var(--shadow);
   overflow-y: auto;
-  border: 1px solid #fefefe;
   margin: 10px auto;
   top: 10%;
   height: 80%;
@@ -159,11 +165,7 @@ body.open {
 }
 
 @media (max-width: 668px) {
-  .projects-grid {
-    overflow: auto;
-    scrollbar-width: thin;
-    scrollbar-color: #2f343f #f1f1f1;
-  }
+
   .card {
     flex-direction: column;
     height: auto;
@@ -177,22 +179,6 @@ body.open {
     object-fit: cover;
   }
 
-  .modal {
-    display: none;
-    position: fixed;
-    flex-direction: column;
-    z-index: 1000;
-    left: 50%;
-    max-width: 90%;
-    width: 90%;
-    transform: translate(-50%, -0%);
-    box-shadow: var(--shadow);
-    overflow-y: auto;
-    border: 1px solid #fefefe;
-    margin: 10px auto;
-    top: 10%;
-    height: 80%;
-  }
 
   .close {
     color: #fff;
