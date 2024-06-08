@@ -3,7 +3,7 @@
   width: var(--width);
   height: auto;
   width: 90%;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 .projects-slider {
@@ -13,6 +13,7 @@
   position: relative;
   margin: 0 auto;
   width: 100%;
+  
 }
 
 .projects-grid {

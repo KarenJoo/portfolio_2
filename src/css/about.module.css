@@ -1,15 +1,21 @@
 #about {
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   overflow-y: hidden;  
   width: var(--width);
- 
+ max-width: 100vw;
+ margin: 0 auto;
 }
 .about-container {
-  margin: var(--margin);
+  max-width: 80%;
+  margin: 0;
+  padding: 0;
+  top: 0;
   display: flex;
   flex-direction: column;
   height: auto;
-  height: 100vh;
+  min-height: 100vh;
+  overflow: hidden;
 }
 
 .about-img {
@@ -32,6 +38,7 @@
   box-shadow: var(--shadow);
   max-width: 600px;
   margin-bottom: 20px;
+ 
 }
 
 .about-text h5 {
@@ -44,6 +51,12 @@
 }
 
 @media (max-width: 668px) {
+
+  .about-container {
+    padding-bottom: 300px; 
+
+
+  }
   .about-img {
     width: 300px;
     height: 300px;
