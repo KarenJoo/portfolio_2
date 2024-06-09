@@ -4,6 +4,7 @@
   height: auto;
   width: 90%;
   margin: 10px auto;
+  min-height: 100vh;
 }
 
 .projects-slider {
@@ -22,9 +23,7 @@
   justify-content: flex-start;
 }
 
-#card-container1,
-#card-container2,
-#card-container3,
+
 .card-container {
   flex: 0 0 100%;
   width: var(--width);
@@ -41,7 +40,7 @@
   box-shadow: var(--shadow);
   max-width: 400px;
   height: 870px;
-  width: 100%;
+  width: var(--width);
   align-items: center;
   margin: var(--margin);
 }
@@ -52,7 +51,7 @@
 
 .card img {
   width: var(--width);
-  max-width: 100%;
+  max-width: var(--width);
   height: 600px;
   display: block;
   position: relative;

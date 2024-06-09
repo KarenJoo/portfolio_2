@@ -1,10 +1,10 @@
 #about {
   min-height: 100vh;
   height: auto;
-  overflow-y: hidden;  
+  overflow-y: hidden;
   width: var(--width);
- max-width: 100vw;
- margin: 0 auto;
+  max-width: 100vw;
+  margin: 0 auto;
 }
 .about-container {
   max-width: 80%;
@@ -37,8 +37,6 @@
   padding: 20px;
   box-shadow: var(--shadow);
   max-width: 600px;
-  margin-bottom: 20px;
- 
 }
 
 .about-text h5 {
@@ -51,11 +49,8 @@
 }
 
 @media (max-width: 668px) {
-
   .about-container {
-    padding-bottom: 300px; 
-
-
+    padding-bottom: 300px;
   }
   .about-img {
     width: 300px;
