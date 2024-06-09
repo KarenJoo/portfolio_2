@@ -12,23 +12,22 @@
   overflow: hidden;
   position: relative;
   margin: 0 auto;
-  width: 100%;
-  
+  width: var(--width);
 }
 
 .projects-grid {
   display: flex;
-  width: 100%;
+  width: var(--width);
   transition: transform 0.5s ease-in-out;
   justify-content: flex-start;
 }
 
 .card-container {
-  
   flex: 0 0 100%;
-  width: 100%;
+  width: var(--width);
   margin: 0 auto;
-  height: 900px;
+  height: auto;
+  top: 10;
 }
 
 .card {
@@ -51,9 +50,8 @@
 .card img {
   width: var(--width);
   max-width: 100%;
-  height: auto;
+  height: 600px;
   display: block;
-  top: 0;
   position: relative;
   object-fit: cover;
 }
@@ -92,24 +90,18 @@
   right: 0;
 }
 
-
-
-
 @media (max-width: 668px) {
-
   .card {
     flex-direction: column;
     height: auto;
     justify-content: center;
     width: 90%;
     max-width: 400px;
-    height: 750px;
+    height: auto;
   }
   .card img {
     width: var(--width);
     height: auto;
     object-fit: cover;
-    top: 2%;
   }
-
 }
