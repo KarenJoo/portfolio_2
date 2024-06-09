@@ -85,6 +85,7 @@
   user-select: none;
   background-color: rgba(0, 0, 0, 0.5);
   border-color: #fff;
+  z-index: 888;
 }
 
 .next {
