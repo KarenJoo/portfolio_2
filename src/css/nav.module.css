@@ -6,6 +6,7 @@
   z-index: 1002;
   position: fixed;
   width: var(--width);
+  max-width: var(--width);
 }
 .nav-content-container {
   display: flex;
@@ -14,7 +15,6 @@
   margin: var(--margin);
   padding: 0px 10px;
   margin-right: 20px;
-
 }
 
 .logo {
@@ -38,7 +38,6 @@
   list-style: none;
   margin: 0;
   z-index: 1002;
-
 }
 
 .menu li {
@@ -51,12 +50,10 @@
 .menu li a {
   color: var(--white);
   text-decoration: none;
- 
 }
 
 .menu.show {
-  display: flex; 
- 
+  display: flex;
 }
 
 /* Media query for smaller screens */

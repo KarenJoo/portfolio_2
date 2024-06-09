@@ -90,9 +90,10 @@ section {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  max-width: var(--width);
+  max-width: 600px;
   margin: 10px;
   padding: 20px;
+ 
   width: var(--width);
 }
 
@@ -101,6 +102,7 @@ section {
   margin: 0 auto;
   z-index: 1;
   align-items: center;
+  max-width: var(--width);
 }
 
 footer {
@@ -114,7 +116,16 @@ footer {
 }
 
 @media (max-width: 412px) {
-  h2 {
+
+  section,
+  .container {
+    max-width: 90%;
+    overflow-x: hidden;
+overflow-y: hidden;
+  }
+  #about h2,
+#projects h2,
+#contact h2 {
     margin-top: 0px;
     font-size: 4em;
   }

@@ -23,7 +23,6 @@
   justify-content: flex-start;
 }
 
-
 .card-container {
   flex: 0 0 100%;
   width: var(--width);
@@ -43,6 +42,7 @@
   width: var(--width);
   align-items: center;
   margin: var(--margin);
+  padding: 10px;
 }
 
 .card:hover {
