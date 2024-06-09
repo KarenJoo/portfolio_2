@@ -75,7 +75,7 @@
       <section id="projects">
       <h2>Projects</h2>  
       <div class="container projects-slider">
-        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="prev">&#10094;</button>
            <div class="projects-grid">
 
           <!-- project 1 -->
@@ -106,6 +106,14 @@
             </div>
           </div> 
         </div>
+
+        <!-- modal project 1 -->
+        <div class="modal" id="modal1">
+          <div class="modal-content">
+            <span class="close-btn" data-close-button>&times;</span>
+            <h3>Holidaze Booking App</h3>
+          </div>
+        </div>
         
 
        
@@ -133,10 +141,19 @@
             <a href="https://urbano-shop.netlify.app/" class="card-link"
               ><span class="arrow">></span> Live site</a
             ></div>
-            <button class="view-more-btn" data-modal-target="#modal1">View More</button>
+            <button class="view-more-btn" data-modal-target="#modal2">View More</button>
           </div>
         </div>
 </div>
+
+   <!-- modal project 2 -->
+   <div class="modal" id="modal2">
+    <div class="modal-content">
+      <span class="close-btn" data-close-button>&times;</span>
+      <h3>Urbano eCom Store</h3>
+    </div>
+  </div>
+  
 
      
 
@@ -167,18 +184,22 @@
                     class="card-link"
                     ><span class="arrow">></span> Style Guide</a
                   ></div>
-                  <button class="view-more-btn" data-modal-target="#modal1">View More</button>
+                  <button class="view-more-btn" data-modal-target="#modal3">View More</button>
                   </div>
                 </div>
-
-         
-                </div>  
-                 
+                </div> 
+                
+                   <!-- modal project 3 -->
+        <div class="modal" id="modal3">
+          <div class="modal-content">
+            <span class="close-btn" data-close-button>&times;</span>
+            <h3>BestBid Auction App</h3>
+          </div>
+        </div>
+        
             </div>             
-                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+                <button class="next">&#10095;</button>
               </div>
-
-
       </section>
 
       <section id="contact">

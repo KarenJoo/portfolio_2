@@ -1,13 +1,13 @@
 import { burgerMenu } from './nav/navbar.mjs';
 import moveSlide from './slider/index.mjs';
+import { initModals } from './modals/modals.mjs';
 
 document.addEventListener('DOMContentLoaded', () => {
   const menuIcon = document.querySelector('.menu-icon');
   menuIcon.addEventListener('click', burgerMenu);
-
-
   const prevButton = document.querySelector('.prev');
   const nextButton = document.querySelector('.next');
+  initModals();
 
   if (prevButton && nextButton) {
     prevButton.addEventListener('click', () => moveSlide(-1));

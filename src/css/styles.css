@@ -4,7 +4,7 @@
 @import url('./buttons.module.css');
 @import url('./about.module.css');
 @import url('./contact.module.css');
-
+@import url('./modals.module.css');
 :root {
   --primary: #2f343f;
   --secondary: #cecdc5;
@@ -16,7 +16,6 @@
   --height: 100%;
   --shadow: 0 5px 5px rgba(0.1, 0.1, 0.2, 0.1);
   --img-shadow: 0px 5px 10px rgba(0, 0, 0, 0.187);
-
   --margin: 10px auto;
   --text-align: center;
   --min-width: 320px;

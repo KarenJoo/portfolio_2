@@ -14,6 +14,8 @@ export default function moveSlide(direction) {
 
   const offset = -currentSlide * 100;
   document.querySelector('.projects-grid').style.transform = `translateX(${offset}%)`;
+
+
 }
 
 
